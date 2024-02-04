@@ -36,7 +36,7 @@ export const GlobalStyles = createGlobalStyle`
         --radius-rounded: 37px;
 
         /* Others */
-        --transition: 0.2s ease;
+        --transition: 0.3s ease;
 
         /* Global Styles */
         body {
