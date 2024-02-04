@@ -55,7 +55,7 @@ export const ButtonStyled = styled.button`
         }
     }}
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
         padding: 15px 36px;
         font-size: var(--fs-sm);   
     }

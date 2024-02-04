@@ -7,6 +7,7 @@ export const NavbarContainer = styled.header`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
     
     @media screen and (min-width: 992px) {
         height: 91px;
@@ -27,7 +28,7 @@ export const NavbarContent = styled.nav`
     gap: 20px;
 
     @media screen and (min-width: 992px) {
-        max-width: 1002px;
+        max-width: var(--max-width);
         margin: auto;
         justify-content: flex-start;
         gap: 73px;
@@ -104,5 +105,9 @@ export const Link = styled.a`
     @media screen and (min-width: 992px) {
         width: auto;
         padding: 0;
+
+        &:hover {
+            background-color: transparent;
+        }
     }
 `;

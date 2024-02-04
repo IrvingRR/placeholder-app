@@ -25,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
         --fs-xxl: 40px;
         --fs-xl: 32px;
         --fs-lg: 24px;
+        --fs-lg-sm: 20px;
         --fs-md: 16px;
         --fs-sm: 14px;
         --fs-xs: 12px;
@@ -37,6 +38,7 @@ export const GlobalStyles = createGlobalStyle`
 
         /* Others */
         --transition: 0.3s ease;
+        --max-width: 1002px;
 
         /* Global Styles */
         body {
