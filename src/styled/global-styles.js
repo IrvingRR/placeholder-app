@@ -28,6 +28,7 @@ export const GlobalStyles = createGlobalStyle`
         --fs-md: 16px;
         --fs-sm: 14px;
         --fs-xs: 12px;
+        --fs-xxs: 11px;
 
         /* Borders and Radius */
         --radius: 5px;
