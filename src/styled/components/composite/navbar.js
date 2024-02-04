@@ -3,27 +3,51 @@ import styled, {css} from "styled-components";
 export const NavbarContainer = styled.header`
     width: 100%;
     height: 61px;
+    background-color: var(--black-gradient-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    @media screen and (min-width: 992px) {
+        height: 91px;
+
+        button {
+            display: none;
+        }
+    }
+`;
+
+export const NavbarContent = styled.nav`
+    width: 100%;
+    height: 100%;
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: var(--black-gradient-color);
-    padding: 16px;
-    position: fixed;
-    top: 0;
-    left: 0;
-`;
 
+    @media screen and (min-width: 992px) {
+        max-width: 1002px;
+        margin: auto;
+        justify-content: flex-start;
+        gap: 73px;
+    }
+`;
+ 
 export const Logo = styled.a`
     color: var(--text-light-color);
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 0.1px;
     font-size: var(--fs-md);
+
+    @media screen and (min-width: 992px) {
+        font-size: var(--fs-lg);
+    }
 `;
 
 export const LinksList = styled.ul`
-    width: 50%;
+    width: 100%;
     height: 90vh;
     background-color: var(--black-gradient-color);
     position: absolute;
@@ -38,6 +62,20 @@ export const LinksList = styled.ul`
     ${props => props.visible && css`
         left: 0;
     `}
+
+    @media screen and (min-width: 768px) {
+        width: 250px;
+    }
+
+    @media screen and (min-width: 992px) {
+        width: auto;
+        height: auto;
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+        gap: 21px;
+    }
 `;
 
 export const LinkItem = styled.li`
@@ -61,5 +99,10 @@ export const Link = styled.a`
 
     &:hover {
         background-color: var(--primary-color);
+    }
+
+    @media screen and (min-width: 992px) {
+        width: auto;
+        padding: 0;
     }
 `;
