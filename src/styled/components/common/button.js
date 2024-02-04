@@ -2,8 +2,6 @@ import styled, {css} from "styled-components";
 
 export const ButtonStyled = styled.button`
     padding: 13px 20px;
-    background-color: var(--primary-color);
-    color: var(--text-light-color);
     border-radius: var(--radius);
     font-weight: 700;
     letter-spacing: 0.2px;
@@ -13,6 +11,8 @@ export const ButtonStyled = styled.button`
     gap: 10px;
     font-size: var(--fs-xs);
     transition: var(--transition);
+
+    svg { color: var(--text-light-color); }
 
     ${props => props.rounded && css`
         border-radius: var(--radius-rounded);
@@ -26,9 +26,13 @@ export const ButtonStyled = styled.button`
                     color: var(--text-dark-color);
                     border-color: var(--primary-color);
 
+                    svg { color: var(--text-dark-color); }
+                    
                     &:hover {
                         background-color: var(--primary-color);
                         color: var(--text-light-color);
+
+                        svg { color: var(--text-light-color); }
                     }
                 `
 
@@ -44,7 +48,15 @@ export const ButtonStyled = styled.button`
                     }
                 `        
             default:
-                break;
+                return css`
+                    background-color: var(--primary-color);
+                    color: var(--text-light-color);
+                `
         }
     }}
+
+    @media screen and (min-width: 992px) {
+        padding: 15px 36px;
+        font-size: var(--fs-sm);   
+    }
 `;
