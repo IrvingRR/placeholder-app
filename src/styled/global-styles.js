@@ -38,7 +38,8 @@ export const GlobalStyles = createGlobalStyle`
 
         /* Others */
         --transition: 0.3s ease;
-        --max-width: 1002px;
+        --max-width: 1050px;
+        --padding-content-sm: 16px;
 
         /* Global Styles */
         body {
