@@ -39,7 +39,7 @@ export const PricingSection = () => {
             title='STANDAR'
             description='Organize across all apps by hand'
             priceData={{ amount: 19, symbol: '$', time: 'Per Month' }}
-            benefits={freeBenefits}
+            benefits={standarBenefits}
             buttonLabel='Buy Now'
           />
         </PricingCards>

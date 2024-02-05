@@ -17,7 +17,7 @@ export const BetterStrategySection = () => {
 
     return (
         <BetterStrategyContainer>
-            <BetterStrategyVideo ref={videoRef} autoplay loop muted>
+            <BetterStrategyVideo ref={videoRef} loop muted>
                 <source src={BetterStrategyVideoBackground} type="video/mp4" />
             </BetterStrategyVideo>
             <BetterStrategyContent ref={sectionRef}>
