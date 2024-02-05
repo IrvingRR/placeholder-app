@@ -11,8 +11,9 @@ export const GlobalStyles = createGlobalStyle`
         --black-gradient-color: rgba(45, 45, 45, 0.5);
         --white-color: rgba(255, 255, 255, 1);
         --gray-color: rgba(217, 217, 217, 1);
-        --success-color: rgba(115, 115, 115, 1);
-        --muted-color: rgba(115, 115, 115, 1);
+        --success-color: rgba(45, 192, 113, 1);
+        --muted-color: rgba(189, 189, 189, 1);
+        --disabled-element-color: rgba(142, 194, 242, 1);
 
         /* Font */
         --font: 'Montserrat', sans-serif;
