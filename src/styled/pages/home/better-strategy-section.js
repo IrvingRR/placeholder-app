@@ -34,6 +34,7 @@ export const BetterStrategyContent = styled.div`
     gap: 30px;
     text-align: center;
     padding: 60px var(--padding-content-sm);
+    z-index: 99;
 
     @media screen and (min-width: 992px) {
         max-width: var(--max-width);
