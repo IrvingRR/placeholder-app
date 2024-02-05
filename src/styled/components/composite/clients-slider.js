@@ -7,7 +7,6 @@ export const SliderContainer = styled.div`
         overflow: hidden;
     }
 
-
     .slick-slide > div {
         margin: 0 15px;
 

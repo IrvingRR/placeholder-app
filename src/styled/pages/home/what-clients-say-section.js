@@ -3,8 +3,12 @@ import styled from "styled-components";
 export const WhatClientSayContainer = styled.div`
     width: 100%;
     min-height: 100vh;
-    position: relative;
-    padding: var(--padding-content);
+    background-color: var(--light-background-color);
+    padding-bottom: 60px;
+    
+    /* @media screen and (min-width: 992px) {
+        padding-bottom: 60px;
+    } */
 `;
 
 export const WhatClientSayContent = styled.div`
@@ -16,6 +20,10 @@ export const WhatClientSayContent = styled.div`
     align-items: center;
     padding: var(--padding-content);
     margin: auto;
+
+    @media screen and (min-width: 992px) {
+        /* padding: 0 16px; */
+    }
 `;
 
 export const WhatClientSayText = styled.div`
