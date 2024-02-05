@@ -33,7 +33,7 @@ export const BetterStrategyContent = styled.div`
     flex-direction: column;
     gap: 30px;
     text-align: center;
-    padding: 60px var(--padding-content-sm);
+    padding: var(--padding-content);
     z-index: 99;
 
     @media screen and (min-width: 992px) {

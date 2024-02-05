@@ -1,5 +1,5 @@
 import { Navbar } from "../components";
-import { BetterStrategySection, HeroSection } from "../components/pages/home";
+import { BetterStrategySection, HeroSection, WhatClientSaySection } from "../components/pages/home";
 
 export const HomePage = () => {
   return (
@@ -7,6 +7,7 @@ export const HomePage = () => {
     <Navbar/>
     <HeroSection/>
     <BetterStrategySection/>
+    <WhatClientSaySection/>
     </>
   );
 };

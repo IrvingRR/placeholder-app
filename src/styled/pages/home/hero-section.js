@@ -21,7 +21,7 @@ export const HeroContent = styled.div`
     display: flex;
     gap: 20px;
     align-items: center;
-    padding: var(--padding-content-sm);
+    padding: var(--padding-content);
     
     @media screen and (min-width: 992px) {
         max-width: var(--max-width);

@@ -21,7 +21,7 @@ export const NavbarContainer = styled.header`
 export const NavbarContent = styled.nav`
     width: 100%;
     height: 100%;
-    padding: var(--padding-content-sm);
+    padding: var(--padding);
     display: flex;
     align-items: center;
     justify-content: space-between;

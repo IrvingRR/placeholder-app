@@ -39,14 +39,16 @@ export const GlobalStyles = createGlobalStyle`
         /* Others */
         --transition: 0.3s ease;
         --max-width: 1050px;
-        --padding-content-sm: 16px;
-
-        /* Global Styles */
-        body {
-            background-color: var(--light-background-color);
-            font-family: var(--font);
-            font-size: var(--fs-sm);
-        }
+        --padding: 16px;
+        --padding-content: 60px 16px;
 
     }
+
+    /* Global Styles */
+    body {
+        background-color: var(--light-background-color);
+        font-family: var(--font);
+        font-size: var(--fs-sm);
+    }
+
 `;
