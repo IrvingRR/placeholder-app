@@ -19,7 +19,7 @@ const standarBenefits =[
 
 export const PricingSection = () => {
   return (
-    <PricingContainer>
+    <PricingContainer id="pricing">
       <PricingContent>
         <PricingText>
           <h2>Pricing</h2>

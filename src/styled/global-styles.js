@@ -50,6 +50,10 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     /* Global Styles */
+    html {
+    scroll-behavior: smooth;
+    }
+    
     body {
         background-color: var(--light-background-color);
         font-family: var(--font);

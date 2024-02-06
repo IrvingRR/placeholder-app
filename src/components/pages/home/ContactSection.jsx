@@ -4,7 +4,7 @@ import { ContactForm } from "../../forms/ContactForm";
 
 export const ContactSection = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
         <ContactMap src={ContactMapBackground} alt='Contact map background ubication'/>
         <ContactContent>
             <ContactForm/>

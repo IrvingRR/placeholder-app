@@ -6,7 +6,7 @@ const VIDEO_URL = 'https://www.youtube.com/watch?v=lNdOtlpmH5U&ab_channel=AliAbd
 
 export const AboutUsSection = () => {
   return (
-    <AboutUsContainer>
+    <AboutUsContainer id="about-us">
         <AboutUsContent>
             <AboutUsText>
                 <h2>About Us</h2>

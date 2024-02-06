@@ -4,7 +4,7 @@ import { Button } from '../../common';
 
 export const HeroSection = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
         <HeroContent>
             {/* Content Text */}
                 <HeroTextInfo>

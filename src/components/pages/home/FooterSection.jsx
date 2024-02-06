@@ -26,10 +26,10 @@ export const FooterSection = () => {
 
                     <FooterItem>
                         <h3>Company info</h3>
-                        <a>About Us</a>
-                        <a>Carrier</a>
-                        <a>We are hiring</a>
-                        <a>Blog</a>
+                        <a href="#about-us">About Us</a>
+                        <a href="#">Carrier</a>
+                        <a href="#">We are hiring</a>
+                        <a href="#">Blog</a>
                     </FooterItem>
 
                     <FooterItem>
