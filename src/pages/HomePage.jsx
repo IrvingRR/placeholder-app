@@ -1,5 +1,5 @@
 import { Navbar } from "../components";
-import { AboutUsSection, AmountOfInvestmentsSection, BetterStrategySection, ContactSection, HeroSection, PricingSection, WhatClientSaySection } from "../components/pages/home";
+import { AboutUsSection, AmountOfInvestmentsSection, BetterStrategySection, ContactSection, FooterSection, HeroSection, PricingSection, WhatClientSaySection } from "../components/pages/home";
 
 export const HomePage = () => {
   return (
@@ -12,6 +12,7 @@ export const HomePage = () => {
     <PricingSection/>
     <AmountOfInvestmentsSection/>
     <ContactSection/>
+    <FooterSection/>
     </>
   );
 };
