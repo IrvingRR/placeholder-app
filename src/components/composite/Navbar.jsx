@@ -3,6 +3,13 @@ import { Link, LinkItem, LinksList, Logo, NavbarContainer, NavbarContent } from 
 import { IconButton } from "../common";
 import { useRef, useState } from "react";
 
+const links = [
+    { label: 'Home', href: '#home' },
+    { label: 'About Us', href: '#about-us' },
+    { label: 'Pricing', href: '#pricing' },
+    { label: 'Contact', href: '#contact' },
+];
+
 export const Navbar = () => {
     const [linksVisible, setLinksVisible] = useState(false);
     
@@ -12,10 +19,11 @@ export const Navbar = () => {
                 <Logo>PlaceHolder</Logo>
                 <IconButton icon={<BiMenuAltLeft/>} variant='outlined-light' onClick={() => setLinksVisible(!linksVisible)}/>
                 <LinksList visible={linksVisible}>
-                    <Link href="#home">Home</Link>
-                    <Link href="#about-us">About Us</Link>
-                    <Link href="#pricing">Pricing</Link>
-                    <Link href="#contact">Contact</Link>
+                    {links.map((link) => (
+                        <Link key={link.href} href={link.href} onClick={() => setLinksVisible(false)}>
+                            {link.label}
+                        </Link>
+                    ))}
                 </LinksList>
             </NavbarContent>
         </NavbarContainer>

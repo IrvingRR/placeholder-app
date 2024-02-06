@@ -60,4 +60,26 @@ export const GlobalStyles = createGlobalStyle`
         font-size: var(--fs-sm);
     }
 
+    /* Scroll Bar */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+        ::-webkit-scrollbar-track {
+        background-color: var(--second-light-background-color);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--muted-color);
+        border-radius: var(--radius-rounded);
+    }
+
+    /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--primary-color);
+    }
+
 `;

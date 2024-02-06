@@ -56,6 +56,7 @@ export const LinksList = styled.ul`
     top: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow: hidden;
     transition: var(--transition);
     left: -100%;
@@ -64,9 +65,9 @@ export const LinksList = styled.ul`
         left: 0;
     `}
 
-    @media screen and (min-width: 768px) {
+    /* @media screen and (min-width: 768px) {
         width: 250px;
-    }
+    } */
 
     @media screen and (min-width: 992px) {
         width: auto;
@@ -92,11 +93,13 @@ export const Link = styled.a`
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 10px 16px;
     font-size: var(--fs-sm);
     color: var(--text-light-color);
     font-weight: 600;
+    font-size: var(--fs-md);
 
     &:hover {
         background-color: var(--primary-color);

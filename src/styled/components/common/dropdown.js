@@ -7,7 +7,7 @@ export const DropdrownContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 40px;
-    padding: 10px;
+    padding: 10px 20px;
     border: 1px solid var(--border-color);
     cursor: pointer;
     border-radius: var(--radius);

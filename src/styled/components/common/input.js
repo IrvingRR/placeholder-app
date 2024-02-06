@@ -5,7 +5,7 @@ export const InputGroup = styled.div`
     max-width: ${props => props.max_width};
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 `;
 
 export const InputContent = styled.div`
@@ -76,5 +76,5 @@ export const InputElement = styled.input`
 
 export const Legend = styled.div`
     color: var(--error-color);
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
 `;
