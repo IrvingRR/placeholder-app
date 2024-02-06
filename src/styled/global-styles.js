@@ -6,14 +6,18 @@ export const GlobalStyles = createGlobalStyle`
     :root {
         /* Colors */
         --light-background-color: rgba(255, 255, 255, 1);
+        --second-light-background-color: rgba(250, 250, 250, 1);
         --primary-color: rgba(35, 166, 240, 1);
         --primary-gradient-color: rgba(24, 76, 154, 0.75);
         --black-gradient-color: rgba(45, 45, 45, 0.5);
         --white-color: rgba(255, 255, 255, 1);
         --gray-color: rgba(217, 217, 217, 1);
         --success-color: rgba(45, 192, 113, 1);
+        --error-color: #f83b3b;
         --muted-color: rgba(189, 189, 189, 1);
         --disabled-element-color: rgba(142, 194, 242, 1);
+        --border-color: #E6E6E6;
+        --input-background-color: #F9F9F9;
 
         /* Font */
         --font: 'Montserrat', sans-serif;

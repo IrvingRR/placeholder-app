@@ -3,6 +3,7 @@ import styled, {css} from "styled-components";
 export const PricingContainer = styled.div`
     width: 100%;
     min-height: 100vh;
+    background-color: var(--second-light-background-color);
 `;
 
 export const PricingContent = styled.div`
