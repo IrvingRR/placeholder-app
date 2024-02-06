@@ -18,7 +18,7 @@ export const Range = ({ initialValue=0, minValue, maxValue, setValue }) => {
                 <RangeBar type='range' min={minValue} max={maxValue} value={rangeValue} onChange={handleChange}/>
             </RangeBarContainer>
             <RangeAmountContainer>
-                <h3>${rangeValue}</h3>
+                <h3>${initialValue}</h3>
                 <h3>${maxValue}</h3>
             </RangeAmountContainer>
         </RangeContainer>

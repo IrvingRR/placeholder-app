@@ -24,7 +24,7 @@ export const AmountOfInvestmentsSection = () => {
                 <Range initialValue={0} minValue={0} maxValue={250} setValue={setProfit}/>
                 <AmountInvestmentProfit>
                     <h3>Profit</h3>
-                    <h3>${profit}</h3>
+                    <h3>${profit * 32}</h3>
                 </AmountInvestmentProfit>
             </AmountInvestmentContent>
         </AmountInvestmentContainer>

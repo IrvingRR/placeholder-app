@@ -6,6 +6,10 @@ export const RangeContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+    }
 `;
 
 export const RangeAmountContainer = styled.div`
@@ -22,6 +26,12 @@ export const RangeAmountContainer = styled.div`
         font-weight: 700;
         line-height: 22px;
         letter-spacing: 0.2px;
+    }
+
+    @media screen and (min-width: 768px) {
+        h3 {
+            font-size: var(--fs-xl);
+        }
     }
 `;
 
