@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import { PricingCards, PricingContainer, PricingContent, PricingText } from "../../../styled/pages/home/pricing-section";
 import { PricingCard } from "../../cards/PricingCard";
 
@@ -18,6 +19,11 @@ const standarBenefits =[
 ];
 
 export const PricingSection = () => {
+
+  const tryForFree = () => toast.success('Try to free selected simulation...');
+
+  const buyStandar = () => toast.success('Buy standard simulation...');
+
   return (
     <PricingContainer id="pricing">
       <PricingContent>
@@ -33,14 +39,16 @@ export const PricingSection = () => {
             priceData={{ amount: 0, symbol: '$', time: 'Per Month' }}
             benefits={freeBenefits}
             buttonLabel='Try for free'
+            buttonFunction={tryForFree}
           />
           
           <PricingCard
-            title='STANDAR'
+            title='STANDARD'
             description='Organize across all apps by hand'
             priceData={{ amount: 19, symbol: '$', time: 'Per Month' }}
             benefits={standarBenefits}
             buttonLabel='Buy Now'
+            buttonFunction={buyStandar}
           />
         </PricingCards>
       </PricingContent>
